@@ -1,1 +1,3 @@
-# Projetos-finais-CASE2
+## Projetos finais case 2 🚀
+
+### 🚧 Em construção... 🚧
