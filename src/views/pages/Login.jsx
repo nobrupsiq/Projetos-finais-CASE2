@@ -7,6 +7,7 @@ function Login() {
     <>
       <Horario />
       <Menu />
+      <h1>LOGIN</h1>
       <Footer />
     </>
   );

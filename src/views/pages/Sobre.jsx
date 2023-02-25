@@ -7,6 +7,7 @@ function Sobre() {
     <>
       <Horario />
       <Menu />
+      <h1>SOBRE</h1>
       <Footer />
     </>
   );

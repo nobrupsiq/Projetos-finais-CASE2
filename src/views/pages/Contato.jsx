@@ -7,6 +7,7 @@ function Contato() {
     <>
       <Horario />
       <Menu />
+      <h1>CONTATO</h1>
       <Footer />
     </>
   );

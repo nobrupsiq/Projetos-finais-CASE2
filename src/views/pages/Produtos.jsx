@@ -7,6 +7,7 @@ function Produtos() {
     <>
       <Horario />
       <Menu />
+      <h1>PRODUTOS</h1>
       <Footer />
     </>
   );
