@@ -2,6 +2,11 @@ import "../assets/css/newsletter.css";
 import carta from "../assets/img/carta.svg";
 
 function Newsletter() {
+  function btClique() {
+    alert("Seja bem vindo(a)! Assinatura foi um sucesso.");
+    window.location.reload();
+  }
+
   return (
     <section className="newsletter-bg">
       <div className="news-container">
@@ -13,7 +18,7 @@ function Newsletter() {
       </div>
       <div className="input-box-button">
         <input type="email" id="email" placeholder="email@email.com" />
-        <input type="button" value="assinar" />
+        <input type="button" value="assinar" id="activeAssinar" onClick={btClique} />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
-import "../assets/css/menu.css";
-import logo from "../assets/img/logo.svg";
+import "../../assets/css/menu.css";
+import logo from "../../assets/img/logo.svg";
 
 function Menu() {
   return (
