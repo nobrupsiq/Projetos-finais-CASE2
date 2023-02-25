@@ -1,5 +1,5 @@
-import "../assets/css/newsletter.css";
-import carta from "../assets/img/carta.svg";
+import "../../assets/css/Home/newsletter.css";
+import carta from "../../assets/img/carta.svg";
 
 function Newsletter() {
   function btClique() {

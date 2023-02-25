@@ -1,8 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
-import market1 from "../assets/img/market1.png";
-import market2 from "../assets/img/market2.png";
-import market3 from "../assets/img/market3.png";
-import "../assets/css/banner.css";
+import market1 from "../../assets/img/market1.png";
+import market2 from "../../assets/img/market2.png";
+import market3 from "../../assets/img/market3.png";
+import "../../assets/css/Home/banner.css";
 
 function Banner() {
   return (

@@ -1,4 +1,4 @@
-import "../../assets/css/menu.css";
+import "../../assets/css/Partials/menu.css";
 import logo from "../../assets/img/logo.svg";
 
 function Menu() {

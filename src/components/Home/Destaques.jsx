@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
-import "../assets/css/destaques.css";
+import "../../assets/css/Home/destaques.css";
 
 function Destaques() {
   return (

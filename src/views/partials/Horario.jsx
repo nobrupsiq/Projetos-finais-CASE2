@@ -1,4 +1,4 @@
-import "../../assets/css/horario.css";
+import "../../assets/css/Partials/horario.css";
 
 function Horario() {
   return (
