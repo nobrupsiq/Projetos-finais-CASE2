@@ -5,10 +5,14 @@ function Menu() {
   return (
     <nav>
       <div className="container">
-        <img src={logo} alt="Logotipo" />
+        <a href="/">
+          <img src={logo} alt="Logotipo" />
+        </a>
         <ul>
           <li>
-            <a href="produtos">produtos</a>
+            <a href="produtos" to="/produtos">
+              produtos
+            </a>
           </li>
           <li>
             <a href="contato">contato</a>

@@ -1,7 +1,7 @@
+import Horario from "../../views/partials/Horario";
+import Menu from "../partials/Menu";
 import Banner from "../../components/Banner";
 import Destaques from "../../components/Destaques";
-import Horario from "../../components/Horario";
-import Menu from "../partials/Menu";
 import Newsletter from "../../components/Newsletter";
 import Footer from "../partials/Fotter";
 
