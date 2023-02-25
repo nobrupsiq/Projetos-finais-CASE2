@@ -1,0 +1,22 @@
+.img-resize {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  transform: translatey(-170%);
+  text-shadow: 2px 2px 2px #000;
+  color: #fecb62;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../img/arrow-right.svg");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../img/arrow-left.svg");
+}
+
+.carousel-control-next {
+  right: 60px;
+}
