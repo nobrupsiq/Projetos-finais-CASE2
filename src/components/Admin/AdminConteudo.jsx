@@ -1,7 +1,15 @@
-import "../../assets/css/Admin/AdminConteudo.css";
+import "../../assets/css/Admin/adminConteudo.css";
+import logoAdmin from "../../assets/img/admin-logo.svg";
 
 function AdminConteudo() {
-  return <h1>BEM VINDO AO PAINEL DE ADMINISTRADOR</h1>;
+  return (
+    <section className="admin-container">
+      <div>
+        <img src={logoAdmin} alt="Logotipo Admin" />
+      </div>
+      <h1>bem vindo ao painel de administrador</h1>
+    </section>
+  );
 }
 
 export default AdminConteudo;
