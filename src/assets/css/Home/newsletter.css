@@ -42,13 +42,12 @@
   padding-left: 20px;
 }
 .input-box-button input[type="email"]::placeholder {
-  font-size: 22px;
-  /* padding-left: 10px; */
+  font-size: 1.375rem;
 }
 .input-box-button input[type="button"] {
-  height: 55px;
-  width: 180px;
+  height: 3.4375rem;
+  width: 11.25rem;
   background: #fecb62;
   border-left: none;
-  font-size: 32px;
+  font-size: 2rem;
 }

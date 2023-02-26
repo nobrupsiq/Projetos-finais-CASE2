@@ -15,10 +15,10 @@ function Menu() {
             </a>
           </li>
           <li>
-            <a href="contato">contato</a>
+            <a href="sobre">sobre</a>
           </li>
           <li>
-            <a href="sobre">sobre</a>
+            <a href="contato">contato</a>
           </li>
           <li>
             <a href="login">login</a>

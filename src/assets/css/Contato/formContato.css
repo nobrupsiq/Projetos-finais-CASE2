@@ -1,5 +1,5 @@
 .container-form {
-  max-width: 1280px;
+  max-width: 80rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -10,7 +10,7 @@
 
 .form-edit label {
   display: block;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -21,7 +21,7 @@
   font-size: 18px;
   outline: none;
   max-width: 100%;
-  width: 320px;
+  width: 20rem;
   border: 3px solid #000;
   margin-bottom: 10px;
   transition: 0.3s;
@@ -47,7 +47,7 @@
   padding: 6px 0;
   width: 200px;
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #838898;
   background: none;

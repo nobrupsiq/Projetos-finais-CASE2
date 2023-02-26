@@ -12,7 +12,7 @@
   padding-left: 40px;
   outline: none;
   border: 3px solid #000;
-  width: 320px;
+  width: 20rem;
   transition: 0.3s;
 }
 
@@ -22,7 +22,7 @@
 
 .search-bg img {
   position: relative;
-  width: 24px;
-  right: 310px;
+  width: 1.5rem;
+  right: 19.375rem;
   filter: opacity(70%);
 }
