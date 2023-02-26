@@ -37,3 +37,9 @@ nav {
   color: #fecb62;
   border: 3px solid #fff;
 }
+
+.container ul li a:focus {
+  background: #000;
+  color: #fecb62;
+  border: 3px solid #fff;
+}

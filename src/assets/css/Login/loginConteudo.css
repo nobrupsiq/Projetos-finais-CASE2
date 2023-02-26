@@ -1,22 +1,22 @@
-.container-form {
+.container-login {
   max-width: 80rem;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 123px 0;
-  gap: 200px;
+  padding: 80px 0 149px 0;
+  gap: 30px;
 }
 
-.form-edit label {
+.login-edit label {
   display: block;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.form-edit input,
-.form-edit textarea {
-  padding: 4px;
+.login-edit input {
+  padding: 6px;
   padding-left: 10px;
   font-size: 18px;
   outline: none;
@@ -29,21 +29,12 @@
   display: block;
 }
 
-.form-edit textarea {
-  margin-bottom: 0;
-}
-
-.form-edit input:focus {
+.login-edit input:focus {
   scale: 1.07;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
-.form-edit textarea:focus {
-  scale: 1.04;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
-}
-
-.form-edit button {
+.login-edit button {
   padding: 6px 0;
   width: 200px;
   margin-top: 20px;
@@ -55,14 +46,14 @@
   transition: 0.3s;
 }
 
-.form-edit button:hover {
+.login-edit button:hover {
   scale: 1.07;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
   border-color: #000;
   color: #000;
 }
 
-.form-edit button:focus {
+.login-edit button:focus {
   scale: 1.07;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
   border-color: #000;
