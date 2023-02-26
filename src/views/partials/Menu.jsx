@@ -1,27 +1,26 @@
 import "../../assets/css/Partials/menu.css";
 import logo from "../../assets/img/logo.svg";
+import { NavLink } from "react-router-dom";
 
 function Menu() {
   return (
     <nav>
       <div className="container">
-        <a href="/">
+        <NavLink to="/">
           <img src={logo} alt="Logotipo" />
-        </a>
+        </NavLink>
         <ul>
           <li>
-            <a href="produtos" to="/produtos">
-              produtos
-            </a>
+            <NavLink to="/produtos">produtos</NavLink>
           </li>
           <li>
-            <a href="sobre">sobre</a>
+            <NavLink to="/sobre">sobre</NavLink>
           </li>
           <li>
-            <a href="contato">contato</a>
+            <NavLink to="/contato">contato</NavLink>
           </li>
           <li>
-            <a href="login">login</a>
+            <NavLink to="/login">login</NavLink>
           </li>
         </ul>
       </div>

@@ -34,7 +34,11 @@
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
-.login-edit button {
+.login-edit a {
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  display: block;
   padding: 6px 0;
   width: 200px;
   margin-top: 20px;
@@ -46,14 +50,14 @@
   transition: 0.3s;
 }
 
-.login-edit button:hover {
+.login-edit a:hover {
   scale: 1.07;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
   border-color: #000;
   color: #000;
 }
 
-.login-edit button:focus {
+.login-edit a:focus {
   scale: 1.07;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
   border-color: #000;

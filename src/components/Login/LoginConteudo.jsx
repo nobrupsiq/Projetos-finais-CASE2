@@ -10,7 +10,7 @@ function LoginConteudo() {
         <input type="text" id="login" />
         <label htmlFor="senha">senha</label>
         <input type="password" id="senha" />
-        <button>entrar</button>
+        <a href="/admin">entrar</a>
       </form>
     </section>
   );

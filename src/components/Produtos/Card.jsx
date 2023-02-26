@@ -1,5 +1,4 @@
 import Card from "react-bootstrap/Card";
-import { useContext } from "react";
 
 function CardX() {
   return (
