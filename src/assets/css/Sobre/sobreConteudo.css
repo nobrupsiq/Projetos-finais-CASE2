@@ -1,0 +1,11 @@
+.container-sobre {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.container-sobre p {
+  max-width: 600px;
+  padding: 20px 0;
+  font-size: 19px;
+}

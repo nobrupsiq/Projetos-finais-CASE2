@@ -1,13 +1,14 @@
 import Footer from "../partials/Fotter";
 import Horario from "../partials/Horario";
 import Menu from "../partials/Menu";
+import SobreConteudo from "../../components/Sobre/SobreConteudo";
 
 function Sobre() {
   return (
     <>
       <Horario />
       <Menu />
-      <h1>SOBRE</h1>
+      <SobreConteudo />
       <Footer />
     </>
   );
