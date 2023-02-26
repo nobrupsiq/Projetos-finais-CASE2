@@ -1,0 +1,20 @@
+.categoria-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.categoria-btn input {
+  font-size: 24px;
+  background: none;
+  padding: 4px 28px;
+  font-weight: 600;
+  border: 3px solid #000;
+  transition: 0.3s;
+}
+
+.categoria-btn input:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  scale: 1.07;
+}

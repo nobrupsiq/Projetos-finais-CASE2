@@ -1,13 +1,18 @@
 import Footer from "../partials/Fotter";
 import Menu from "../partials/Menu";
 import Horario from "../partials/Horario";
+import ProdutosBanner from "../../components/Produtos/ProdutosBanner";
+import ProdutosSearch from "../../components/Produtos/ProdutosSearch";
+import ProdutosItems from "../../components/Produtos/ProdutosItems";
 
 function Produtos() {
   return (
     <>
       <Horario />
       <Menu />
-      <h1>PRODUTOS</h1>
+      <ProdutosBanner />
+      <ProdutosSearch />
+      <ProdutosItems />
       <Footer />
     </>
   );

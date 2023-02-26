@@ -1,5 +1,13 @@
+import "../../assets/css/Produtos/produtosBanner.css";
+
 function ProdutosBanner() {
-  return <h1>a</h1>;
+  return (
+    <section className="produtos-banner">
+      <div>
+        <h1>produtos</h1>
+      </div>
+    </section>
+  );
 }
 
 export default ProdutosBanner;

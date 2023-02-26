@@ -1,0 +1,14 @@
+.produtos-banner {
+  background-image: url("../../img/produtos-banner.png");
+  background-size: cover;
+  height: 40vh;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtos-banner h1 {
+  font-size: 64px;
+  color: #fff;
+}
