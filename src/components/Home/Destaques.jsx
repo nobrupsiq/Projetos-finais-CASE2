@@ -8,7 +8,12 @@ function Destaques({ img, name, price }) {
          <h1 className="destaques-title">destaques</h1>
          <Carousel
             className="caroulsel-indicators2"
-            style={{ display: "flex", justifyContent: "center", gap: "20px", padding: "80px 0 120px 0" }}
+            style={{
+               display: "flex",
+               justifyContent: "center",
+               gap: "20px",
+               padding: "80px 0 120px 0",
+            }}
          >
             <Carousel.Item interval={9000000000}>
                <Card style={{ width: "18rem" }}>

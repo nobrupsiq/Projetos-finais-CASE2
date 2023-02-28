@@ -1,28 +1,62 @@
 .categoria-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 40px 0;
 }
 
 .categoria-btn input {
-  font-size: 1.5rem;
-  background: none;
-  padding: 4px 28px;
-  font-weight: 600;
-  border: 3px solid #000;
-  transition: 0.3s;
+   font-size: 1.5rem;
+   background: none;
+   padding: 4px 28px;
+   font-weight: 600;
+   border: 3px solid #000;
+   transition: 0.3s;
 }
 
 .categoria-btn input:hover {
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  scale: 1.07;
+   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+   scale: 1.07;
 }
 
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 40px;
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 80px 0 120px 0px;
+}
+
+.btn {
+   font-size: 1.5rem;
+   background: none;
+   padding: 4px 28px;
+   font-weight: 600;
+   border: 3px solid #000;
+   border-radius: 0;
+   transition: 0.3s;
+}
+
+.btn:hover {
+   border: 3px solid #000;
+}
+
+.btn:focus {
+   border: 3px solid #000;
+   scale: 1.04;
+   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu {
+   border: 3px solid #000;
+   border-radius: 0;
+}
+
+.dropdown-item:hover {
+   background: #fecb62;
+}
+.dropdown-item:focus {
+   background: #fecb62;
 }

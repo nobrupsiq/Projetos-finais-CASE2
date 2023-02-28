@@ -1,13 +1,29 @@
 import Card from "react-bootstrap/Card";
+import "../../assets/css/Produtos/produtosItems.css";
 
 function CardX({ img, name, desc, price }) {
    return (
-      <Card style={{ width: "18rem" }}>
-         <Card.Img variant="top" src={img} />
-         <Card.Body>
-            <Card.Title>{name}</Card.Title>
+      <Card style={{ width: "11rem" }}>
+         <Card.Img
+            variant="top"
+            src={img}
+            style={{
+               width: "170px",
+               objectFit: "cover",
+            }}
+         />
+         <Card.Body
+            style={{
+               display: "flex",
+               flexDirection: "column",
+               justifyContent: "center",
+            }}
+         >
+            <Card.Title style={{ fontSize: "14px" }}>{name}</Card.Title>
             <Card.Text></Card.Text>
-            <Card.Title>R$ {price}</Card.Title>
+            <Card.Title style={{ paddingTop: "10px", fontWeight: "600" }}>
+               R$ {price}
+            </Card.Title>
          </Card.Body>
       </Card>
    );

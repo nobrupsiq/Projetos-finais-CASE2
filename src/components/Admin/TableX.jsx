@@ -77,7 +77,9 @@ function TableX() {
          category: $edit_category.value,
       };
 
-      axios.put("http://localhost:3000/carrinho/" + o.id, o).then((e) => refresh_list());
+      axios
+         .put("http://localhost:3000/carrinho/" + o.id, o)
+         .then((e) => e.refresh_list());
       setModalShowEdit(false);
    }
 
@@ -120,10 +122,19 @@ function TableX() {
             </form>
          </ModalCreate>
 
-         <ModalCreate show={modalShowEdit} onHide={() => setModalShowEdit(false)}>
+         <ModalCreate
+            show={modalShowEdit}
+            onHide={() => setModalShowEdit(false)}
+         >
             <form className="form-add">
-               {/* <label htmlFor="$edit_id">id</label>
-               <input disabled className="" id="$edit_id" placeholder="id" type="text" /> */}
+               <label htmlFor="$edit_id">id</label>
+               <input
+                  disabled
+                  className=""
+                  id="$edit_id"
+                  placeholder="id"
+                  type="text"
+               />
 
                <label htmlFor="$edit_img">imagem</label>
                <input id="$edit_img" placeholder="URL" type="text" />
@@ -138,7 +149,11 @@ function TableX() {
                <input id="$edit_price" placeholder="00.00" type="text" />
 
                <label htmlFor="$edit_category">categoria</label>
-               <input id="$edit_category" placeholder="EX: petshop" type="text" />
+               <input
+                  id="$edit_category"
+                  placeholder="EX: petshop"
+                  type="text"
+               />
 
                <button onClick={saveEdit} className="btn-atualizar">
                   Atualizar
@@ -156,7 +171,11 @@ function TableX() {
         w-100
         "
          >
-            <Button onClick={() => setModalShow(true)} className="mb-2" variant="outline-dark">
+            <Button
+               onClick={() => setModalShow(true)}
+               className="mb-2 pd-resp"
+               variant="outline-dark"
+            >
                Adicionar produto 📦
             </Button>
 
@@ -185,7 +204,11 @@ function TableX() {
                            <td>{e.category}</td>
                            <td>
                               <Button variant="outline-danger">Excluir</Button>
-                              <Button variant="outline-dark" className="m-1" onClick={() => changeInfo(e)}>
+                              <Button
+                                 variant="outline-dark"
+                                 className="m-1"
+                                 onClick={() => changeInfo(e)}
+                              >
                                  {" "}
                                  Atualizar{" "}
                               </Button>

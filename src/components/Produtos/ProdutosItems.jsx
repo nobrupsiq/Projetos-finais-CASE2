@@ -7,33 +7,40 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
 let categorias = [
-   "Alimentos",
-   "Beleza-e-perfumaria",
-   "Bebidas",
-   "Bebidas-alcoolicas",
-   "Limpeza",
-   "Bebes-e-criancas",
-   "Cuidados-pessoais",
-   "Suplementos-alimentares",
-   "Eventos-e-festas",
-   "Utensilios-e-descartaveis",
-   "Petshop",
+   "alimentos",
+   "beleza-e-perfumaria",
+   "bebidas",
+   "bebidas-alcoolicas",
+   "limpeza",
+   "bebes-e-criancas",
+   "cuidados-pessoais",
+   "suplementos-alimentares",
+   "eventos-e-festas",
+   "utensilios-e-descartaveis",
+   "petshop",
 ];
 
 function ProdutosItems() {
    const [list, setLista] = useState([]);
 
    useEffect(() => {
-      axios.get("http://localhost:3000/carrinho?_page=1&_limit=50").then((e) => {
-         let get_lista = e.data;
-         setLista(get_lista);
-      });
+      axios
+         .get("http://localhost:3000/carrinho?_page=1&_limit=48")
+         .then((e) => {
+            let get_lista = e.data;
+            setLista(get_lista);
+         });
    }, []);
 
    function categoria(name_category) {
-      axios.get("http://localhost:3000/carrinho?_page=1&_limit=50&category=" + name_category).then((e) => {
-         setLista(e.data);
-      });
+      axios
+         .get(
+            "http://localhost:3000/carrinho?_page=1&_limit=50&category=" +
+               name_category
+         )
+         .then((e) => {
+            setLista(e.data);
+         });
    }
 
    return (
@@ -43,10 +50,10 @@ function ProdutosItems() {
       </div> */}
 
          <DropdownButton
-            variant="btn btn-outline-dark"
+            variant="btn"
             className="categoria-btn"
             id="dropdown-basic-button"
-            title="Categorias"
+            title="categorias"
          >
             {categorias.map((e, i) => {
                return (
