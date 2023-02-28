@@ -1,0 +1,39 @@
+.form-add {
+   display: grid;
+   place-content: center;
+}
+
+.form-add input {
+   width: 340px;
+   padding: 10px;
+   font-size: 18px;
+   outline: none;
+   border: 4px solid #000;
+}
+
+.form-add label {
+   font-size: 24px;
+   font-weight: 600;
+}
+
+.form-add input:focus {
+   scale: 1.05;
+   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+   border: 4px solid #000;
+   border-radius: 0;
+   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.7);
+}
+.modal-header {
+   background: #fecb62;
+   border-radius: 0;
+   border-bottom: 4px solid #000;
+}
+
+.modal-footer {
+   background: #fecb62;
+   border-radius: 0;
+   border-top: 4px solid #000;
+}
