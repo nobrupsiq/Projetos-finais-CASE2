@@ -19,11 +19,8 @@ function CardX({ img, name, desc, price }) {
                justifyContent: "center",
             }}
          >
-            <Card.Title style={{ fontSize: "14px" }}>{name}</Card.Title>
-            <Card.Text></Card.Text>
-            <Card.Title style={{ paddingTop: "10px", fontWeight: "600" }}>
-               R$ {price}
-            </Card.Title>
+            <Card.Title>{name}</Card.Title>
+            <Card.Title style={{ paddingTop: "10px", fontWeight: "600" }}>R$ {price}</Card.Title>
          </Card.Body>
       </Card>
    );

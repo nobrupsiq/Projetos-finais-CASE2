@@ -4,15 +4,19 @@ import Horario from "../partials/Horario";
 import ProdutosBanner from "../../components/Produtos/ProdutosBanner";
 import ProdutosSearch from "../../components/Produtos/ProdutosSearch";
 import ProdutosItems from "../../components/Produtos/ProdutosItems";
+import { useState } from "react";
 
 function Produtos() {
+
+  let [pesquisaNome, setPesquisaNome] = useState("")
+
   return (
     <>
       <Horario />
       <Menu />
       <ProdutosBanner />
-      <ProdutosSearch />
-      <ProdutosItems />
+      <ProdutosSearch set_pesquisa={setPesquisaNome} />
+      <ProdutosItems pesquisa_n={pesquisaNome}  />
       <Footer />
     </>
   );

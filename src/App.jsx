@@ -14,10 +14,10 @@ function App() {
 
    return (
       <>
-         {/* <div className="loader" style={estilo}>
+         <div className="loader" style={estilo}>
             <img src={Loader} alt="" />
             <h1>carregando...</h1>
-         </div> */}
+         </div>
          <Rotas />
       </>
    );

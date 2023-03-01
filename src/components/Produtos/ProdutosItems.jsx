@@ -20,27 +20,42 @@ let categorias = [
    "petshop",
 ];
 
-function ProdutosItems() {
+// http://localhost:3000/carrinho?name_like=Pizza
+
+function ProdutosItems({ pesquisa_n }) {
    const [list, setLista] = useState([]);
+   const [pesquisa, setPesquisa] = useState(pesquisa_n);
 
    useEffect(() => {
-      axios
-         .get("http://localhost:3000/carrinho?_page=1&_limit=48")
-         .then((e) => {
-            let get_lista = e.data;
-            setLista(get_lista);
-         });
-   }, []);
+      setPesquisa(pesquisa_n);
+
+      let url =
+         pesquisa_n == ""
+            ? "http://localhost:3000/carrinho?_page=1&_limit=48"
+            : "http://localhost:3000/carrinho?_page=1&_limit=48&name_like=" + pesquisa;
+
+      axios.get(url).then((e) => {
+         let get_lista = e.data;
+         setLista(get_lista);
+      });
+   }, [pesquisa_n]);
+
+   // useEffect(() => {
+
+   //    // setPesquisa(pesquisa_n)
+
+   //    axios
+   //       .get("http://localhost:3000/carrinho?_page=1&_limit=48&name_like="+pesquisa)
+   //       .then((e) => {
+   //          let get_lista = e.data;
+   //          setLista(get_lista);
+   //       });
+   // }, []);
 
    function categoria(name_category) {
-      axios
-         .get(
-            "http://localhost:3000/carrinho?_page=1&_limit=50&category=" +
-               name_category
-         )
-         .then((e) => {
-            setLista(e.data);
-         });
+      axios.get("http://localhost:3000/carrinho?_page=1&_limit=50&category=" + name_category).then((e) => {
+         setLista(e.data);
+      });
    }
 
    return (
@@ -49,12 +64,7 @@ function ProdutosItems() {
         <input type="button" value="categoria" />
       </div> */}
 
-         <DropdownButton
-            variant="btn"
-            className="categoria-btn"
-            id="dropdown-basic-button"
-            title="categorias"
-         >
+         <DropdownButton variant="btn" className="categoria-btn" id="dropdown-basic-button" title="categorias">
             {categorias.map((e, i) => {
                return (
                   <Dropdown.Item key={i} onClick={() => categoria(e)}>

@@ -16,7 +16,29 @@ table tr {
    text-align: center;
 }
 
+table td:nth-child(1) {
+   width: 100px;
+   text-align: center;
+}
+
 table td:nth-child(2) {
+   width: 100px;
+   text-align: center;
+}
+
+table td:nth-child(6) {
+   width: 100px;
+   text-align: center;
+}
+table td:nth-child(3) {
+   width: 100px;
+   text-align: center;
+}
+table td:nth-child(5) {
+   width: 100px;
+   text-align: center;
+}
+table td:nth-child(4) {
    width: 100px;
    text-align: center;
 }
@@ -79,4 +101,12 @@ table td {
    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
    border-color: #000;
    color: #000;
+}
+
+.table-bordered > :not(caption) > * > * {
+   border-width: 0 4px;
+}
+
+.align-items-start {
+   align-items: center !important;
 }

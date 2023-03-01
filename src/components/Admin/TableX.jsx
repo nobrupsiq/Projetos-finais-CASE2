@@ -1,6 +1,8 @@
 import { Table, Container, Button } from "react-bootstrap";
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
+import "../../assets/css/Admin/adminSearch.css";
+import LupaAdmin from "../../assets/img/lupa.png";
 
 import ModalCreate from "../Modal/ModalCreate";
 import "../../assets/css/Admin/tableX.css";
@@ -56,21 +58,6 @@ function TableX() {
       setModalShow(false);
    }
 
-   function refreshInfo(obj) {
-      let o = {
-         id: $edit_id.value,
-         img: $edit_img.value,
-         name: $edit_name.value,
-         price: $edit_price.value,
-         brand: $edit_brand.value,
-         category: $edit_category.valuee,
-      };
-   }
-
-   // function deletProduct() {
-   //    axios.delete("http://localhost:300/carrinho/");
-   // }
-
    function saveEdit() {
       let o = {
          id: $edit_id.value,
@@ -99,8 +86,29 @@ function TableX() {
       setModalShowEdit(true);
    }
 
+   function deleteItem(id) {
+      let con = confirm("Deseja mesmo excluir?");
+      if (con) {
+         axios.delete("http://localhost:3000/carrinho/" + id).then((e) => {
+            refresh_list();
+         });
+      }
+   }
+
+   function find(txt) {
+      axios.get("http://localhost:3000/carrinho?name_like=" + txt).then((e) => {
+         let get_lista = e.data;
+         console.log(get_lista);
+         setLista(get_lista);
+      });
+   }
+
    return (
       <>
+         <div className="admin-search">
+            <img src={LupaAdmin} alt="Lupa" />
+            <input type="search" placeholder="Pesquisar" onChange={(e) => find(e.target.value)} />
+         </div>
          <ModalCreate show={modalShow} onHide={() => setModalShow(false)}>
             <form className="form-add">
                <label htmlFor="inp_img">imagem</label>
@@ -188,8 +196,19 @@ function TableX() {
                            <td>R$ {e.price}</td>
                            <td>{e.category}</td>
                            <td>
-                              <Button variant="outline-danger">Excluir</Button>
-                              <Button variant="outline-dark" className="m-1" onClick={() => changeInfo(e)}>
+                              <Button
+                                 style={{ padding: "4px 6px", fontSize: "20px" }}
+                                 variant="outline-danger"
+                                 onClick={() => deleteItem(e.id)}
+                              >
+                                 Excluir
+                              </Button>
+                              <Button
+                                 style={{ padding: "4px 6px", fontSize: "20px" }}
+                                 variant="outline-dark"
+                                 className="m-1"
+                                 onClick={() => changeInfo(e)}
+                              >
                                  {" "}
                                  Atualizar{" "}
                               </Button>
