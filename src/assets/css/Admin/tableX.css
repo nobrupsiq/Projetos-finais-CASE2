@@ -11,14 +11,9 @@
    box-shadow: 0px 0px 10px 5px orange;
 }
 
-table {
-   width: 1000px;
-   max-width: 90%;
-   margin: auto;
-}
-
 table tr {
    max-width: 200px;
+   text-align: center;
 }
 
 table td:nth-child(2) {
@@ -32,10 +27,6 @@ table td {
    max-width: 300px;
    overflow: hidden;
    text-overflow: ellipsis;
-}
-
-.msg::after {
-   content: "testando";
 }
 
 .btn-salvar {
