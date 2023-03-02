@@ -6,8 +6,8 @@
 
 Descrição:
 
-> Criar um site que venda o projeto do Case 1.
-> O conteúdo das páginas sobre e funcionalidades deve ser consultado de uma API.
+> Criar um site que venda o projeto do Case 1..
+> O conteúdo das páginas sobre e funcionalidades deve ser consultado de uma API..
 > Para realizar a edição serão criadas rotas /admin.
 > O front-end deve ser feito utilizando React e Bootstrap.
 > O back-end deve ser feito utilizando Node, Express e SQLite(CASE 1)
