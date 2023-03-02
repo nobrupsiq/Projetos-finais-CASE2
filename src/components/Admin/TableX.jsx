@@ -2,6 +2,7 @@ import { Table, Container, Button } from "react-bootstrap";
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import LupaAdmin from "../../assets/img/lupa.png";
+import adminSearch from "../../assets/css/Admin/menuAdmin.css";
 
 import ModalCreate from "../Modal/ModalCreate";
 import "../../assets/css/Admin/tableX.css";
