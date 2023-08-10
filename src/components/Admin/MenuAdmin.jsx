@@ -1,17 +1,17 @@
-import "../../assets/css/Admin/menuAdmin.css";
-import logo from "../../assets/img/logo.svg";
-import { NavLink } from "react-router-dom";
+import '../../assets/css/Admin/menuAdmin.css';
+import logo from '../../assets/img/logo.svg';
+import { NavLink } from 'react-router-dom';
 
 function MenuAdmin() {
   return (
     <nav>
       <div className="container">
-        <NavLink to="/">
+        <NavLink to="/Projetos-finais-CASE2">
           <img src={logo} alt="Logotipo" />
         </NavLink>
         <ul>
           <li>
-            <NavLink to="/ ">logout</NavLink>
+            <NavLink to="/Projetos-finais-CASE2/admin">logout</NavLink>
           </li>
         </ul>
       </div>
