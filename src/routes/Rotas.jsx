@@ -11,11 +11,11 @@ function Rotas() {
     <BrowserRouter>
       <Routes>
         <Route path="/Projetos-finais-CASE2" element={<Home />} />
-        <Route path="/produtos" element={<Produtos />} />
-        <Route path="/contato" element={<Contato />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/Projetos-finais-CASE2/produtos" element={<Produtos />} />
+        <Route path="/Projetos-finais-CASE2/contato" element={<Contato />} />
+        <Route path="/Projetos-finais-CASE2/sobre" element={<Sobre />} />
+        <Route path="/Projetos-finais-CASE2/login" element={<Login />} />
+        <Route path="/Projetos-finais-CASE2/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
